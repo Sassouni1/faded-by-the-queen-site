@@ -1,0 +1,52 @@
+:root {
+  --dark: #24313b;
+  --gold: #c4a26a;
+  --brand-gradient: radial-gradient(ellipse 115% 180% at 22% -45%, #4b5963 0%, #394650 53%, #24313b 100%);
+}
+
+.nav { background: #000; }
+.site-footer { background: #000; }
+
+.cta-stack a,
+.gallery-cta a,
+#consultation-form button {
+  background: #c4a26a;
+}
+
+.cta-stack a:hover,
+.cta-stack a:focus-visible,
+#consultation-form button:hover,
+#consultation-form button:focus-visible {
+  background: #b58e50;
+}
+
+.video-card span {
+  background: #c4a26a;
+}
+
+.lead-modal__dialog {
+  border-color: #dfe7eb;
+}
+
+.monique .split img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+.monique .split { grid-template-columns:minmax(0,390px) minmax(0,1fr); gap:50px; }
+.monique .split img { width:350px; max-width:100%; max-height:none; height:auto; justify-self:center; }
+.benefits-layout { width:min(1140px,calc(100% - 140px)); grid-template-columns:minmax(0,525px) minmax(0,1fr); }
+.benefits-layout > img { max-width:100%; }
+.monique { height:auto; padding:60px 0; }
+.faq { padding-top:55px; }
+@media (max-width:900px) {
+  .monique .split { grid-template-columns:1fr; gap:28px; }
+  .monique .split img { width:min(100%,350px); }
+  .benefits-layout { width:calc(100% - 40px); grid-template-columns:1fr; gap:35px; }
+}
+.nav .brand-logo { display:block; position:relative; width:130px; height:104px; overflow:hidden; flex:none; }
+.nav .brand-logo img { position:absolute; top:50%; left:50%; width:182px; height:auto; max-width:none; transform:translate(-50%,-50%); }
+@media (max-width:900px) {
+  .nav .brand-logo { width:90px; height:75px; }
+  .nav .brand-logo img { width:126px; }
+}
