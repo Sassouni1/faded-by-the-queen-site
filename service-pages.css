@@ -1,3 +1,4 @@
+.service-photo figcaption{margin-top:8px;color:#625747;font-size:14px;line-height:1.4}
 :root{--ink:#1d262d;--navy:#25313b;--gold:#be8c4d;--paper:#f5f3ef}
 .menu-card{position:relative}
 .menu-card-image{position:absolute;top:20px;right:20px;display:block;width:88px;height:88px;object-fit:cover;border-radius:3px}
